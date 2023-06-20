@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  background-color: hsl(233deg, 47%, 7%);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 5rem 1.25rem;
+  font-family: "Inter", sans-serif;
+}
+body img,
+body picture,
+body video,
+body canvas,
+body svg {
+  display: block;
+  max-width: 100%;
+}
+body .container {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 0.75rem;
+}
+body .container .text {
+  padding: 2rem;
+}
+body .container .text h2 {
+  font-size: 1.75rem;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  font-weight: 700;
+}
+body .container .text h2 .accent {
+  color: hsl(277deg, 64%, 61%);
+}
+body .container .text .description {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 1.25rem 0;
+  line-height: 1.5rem;
+}
+body .container .text .stats {
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+body .container .text .stats .description {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 1.25rem 0;
+  line-height: 1.5rem;
+}
+body .container .text .stats .stat {
+  padding: 1rem;
+}
+body .container .text .stats .stat .count {
+  font-family: "Inter", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+body .container .text .stats .stat .name {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.08rem;
+  margin-top: 0.5rem;
+}
+body .container .image {
+  background-color: hsl(277deg, 64%, 61%);
+  position: relative;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+body .container .image .mobile {
+  border-radius: 0.75rem 0.75rem 0 0;
+  mix-blend-mode: multiply;
+}
+body .container .image .desktop {
+  display: none;
+}
+body .container .image .image-color {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277deg, 64%, 61%);
+  position: absolute;
+  top: 0;
+  opacity: 0.25;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+@media screen and (min-width: 1112px) {
+  body .container {
+    max-width: none;
+    width: 67rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body .container .text {
+    width: 50%;
+    flex-basis: 50%;
+    padding: 4.5rem 5rem 0 4rem;
+  }
+  body .container .text h2 {
+    text-align: left;
+    font-size: 2.27rem;
+  }
+  body .container .text .description {
+    text-align: left;
+  }
+  body .container .text .stats {
+    padding-top: 3.2rem;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+  }
+  body .container .text .stats .stat {
+    flex-shrink: 1;
+    padding: 0;
+    padding-right: 3.5rem;
+  }
+  body .container .image {
+    flex-basis: 50%;
+    width: 50%;
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
+  body .container .image .mobile {
+    display: none;
+  }
+  body .container .image .desktop {
+    display: block;
+    mix-blend-mode: multiply;
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
+  body .container .image .image-color {
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */
