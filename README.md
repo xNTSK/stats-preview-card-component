@@ -1,4 +1,4 @@
-# Link to website preview: https://xntsk.github.io/stats-preview-card-component-main/
+# Link to website preview: https://xntsk.github.io/stats-preview-card-component/
 
 # Frontend Mentor - Stats preview card component
 
